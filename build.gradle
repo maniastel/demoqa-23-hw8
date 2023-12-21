@@ -42,13 +42,13 @@ tasks.withType(Test) {
         }
     }
 }
-task form_tests(type: Test) {
+task form_test(type: Test) {
     useJUnitPlatform {
         includeTags("form")
     }
 }
 
-task textbox_tests(type: Test) {
+task textbox_test(type: Test) {
     useJUnitPlatform {
         includeTags("textbox")
     }
