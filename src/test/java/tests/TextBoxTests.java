@@ -13,6 +13,7 @@ import pages.TextBoxPage;
 import static io.qameta.allure.Allure.step;
 
 @Tag("textbox")
+@DisplayName("Проверка формы")
 public class TextBoxTests extends TestBase {
 
     TextBoxPage textBoxPage = new TextBoxPage();

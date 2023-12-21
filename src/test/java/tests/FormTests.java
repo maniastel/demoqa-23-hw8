@@ -12,6 +12,7 @@ import pages.RegistrationPage;
 import static io.qameta.allure.Allure.step;
 
 @Tag("form")
+@DisplayName("Проверка формы регистрации")
 public class FormTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
