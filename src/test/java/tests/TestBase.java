@@ -20,8 +20,10 @@ public class TestBase {
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "101");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.timeout = 10000;
+        Configuration.pageLoadStrategy = "eager";
 
-       DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                "enableVNC", true,
                "enableVideo", true
