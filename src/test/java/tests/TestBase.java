@@ -15,11 +15,9 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
 
-        Configuration.baseUrl =System.getProperty("baseUrl", "https://demoqa.com");
-        Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
-        Configuration.browser = System.getProperty("browser", "chrome");
-        Configuration.browserVersion = System.getProperty("version", "101");
-        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
+        Configuration.baseUrl ="https://demoqa.com";
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        Configuration.browserSize = "1920x1080";
         Configuration.timeout = 10000;
         Configuration.pageLoadStrategy = "eager";
 
