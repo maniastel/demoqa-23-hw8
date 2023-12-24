@@ -16,10 +16,10 @@ public class TestBase {
     static void beforeAll() {
 
         Configuration.baseUrl =System.getProperty("baseUrl", "https://demoqa.com");
-        Configuration.remote = System.getProperty("seleniod", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("selenoid", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "101");
-        Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
+        Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
 
        DesiredCapabilities capabilities = new DesiredCapabilities();
        capabilities.setCapability("selenoid:options", Map.<String, Object>of(
